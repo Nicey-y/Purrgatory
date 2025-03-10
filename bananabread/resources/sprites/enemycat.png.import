@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpeys53fnswm2"
-path="res://.godot/imported/Level1v2.png-8ff6a65633054613abda571f7d6e5795.ctex"
+uid="uid://c5yv1na1lvpj1"
+path="res://.godot/imported/enemycat.png-21c1f91d34fc2f5006d0596ad6b7ea5d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/sprites/Level1v2.png"
-dest_files=["res://.godot/imported/Level1v2.png-8ff6a65633054613abda571f7d6e5795.ctex"]
+source_file="res://resources/sprites/enemycat.png"
+dest_files=["res://.godot/imported/enemycat.png-21c1f91d34fc2f5006d0596ad6b7ea5d.ctex"]
 
 [params]
 

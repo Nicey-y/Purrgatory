@@ -1,0 +1,8 @@
+res://Scenes/player_cat.tscn
+res://Scenes/enemy_frog.tscn
+res://Scenes/test_level_1.tscn
+res://Scenes/door.tscn
+res://Scenes/hud.tscn
+res://Scenes/player_cat.gd
+res://Scenes/enemy_frog.gd
+res://Scenes/frog_texture.gd
