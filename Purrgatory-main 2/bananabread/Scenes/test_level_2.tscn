@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://yivuiw46a1v3"]
+
+[ext_resource type="Texture2D" uid="uid://81a5yof7ak6m" path="res://resources/sprites/Level2.png" id="1_kn8tv"]
+[ext_resource type="PackedScene" uid="uid://c48qtinfc041b" path="res://Scenes/enemy_frog.tscn" id="2_dtwrq"]
+[ext_resource type="PackedScene" uid="uid://0jx2wuxwctgi" path="res://Scenes/player_cat.tscn" id="3_uduus"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yfjxr"]
+size = Vector2(79.5, 14)
+
+[node name="test_level_2" type="StaticBody2D"]
+position = Vector2(255, 193)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_kn8tv")
+
+[node name="OUtOfBounds" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-255, 20, -255, -191, 253, -190, 256, 160, 268, 160, 263, -206, -258, -209)
+
+[node name="Floor" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-254, 21, -241, 10, -28, 11, -27, 150, -34, 159, 180, 158, 254, 158, 254, 192, -256, 190)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(213.75, 149)
+shape = SubResource("RectangleShape2D_yfjxr")
+
+[node name="EnemyFrog" parent="." instance=ExtResource("2_dtwrq")]
+position = Vector2(0, 138)
+
+[node name="EnemyFrog2" parent="." instance=ExtResource("2_dtwrq")]
+position = Vector2(156, 142)
+
+[node name="PlayerCat" parent="." instance=ExtResource("3_uduus")]
+position = Vector2(-234, -182)
