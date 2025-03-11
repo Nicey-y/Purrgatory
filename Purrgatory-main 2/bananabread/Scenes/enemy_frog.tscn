@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://c48qtinfc041b"]
+
+[ext_resource type="Script" uid="uid://by132g2dcipfd" path="res://Scenes/enemy_frog.gd" id="1_n4c11"]
+[ext_resource type="Texture2D" uid="uid://cs3fyuf35j24b" path="res://resources/sprites/frog.png" id="2_jgekf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7atxb"]
+radius = 10.0499
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n4c11"]
+radius = 73.0
+
+[node name="EnemyFrog" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("1_n4c11")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.171453, 0.166814)
+texture = ExtResource("2_jgekf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_7atxb")
+
+[node name="Damagable" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+
+[node name="DamageableRange" type="CollisionShape2D" parent="Damagable"]
+shape = SubResource("CircleShape2D_n4c11")
+
+[connection signal="body_entered" from="Damagable" to="." method="_on_damagable_body_entered"]
+[connection signal="body_exited" from="Damagable" to="." method="_on_damagable_body_exited"]
