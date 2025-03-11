@@ -21,6 +21,10 @@ window/size/viewport_width=512
 window/size/viewport_height=384
 window/stretch/mode="viewport"
 
+[global_group]
+
+PlayerCat=""
+
 [input]
 
 attack={
@@ -39,3 +43,4 @@ jump_with_arrow_key={
 2d_physics/layer_1="World"
 2d_physics/layer_2="Enemy"
 2d_physics/layer_3="Player"
+2d_physics/layer_4="NextLevelDoor"

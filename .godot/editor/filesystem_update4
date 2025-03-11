@@ -1,0 +1,7 @@
+res://Scenes/test_level_1.tscn
+res://Scenes/test_level_2.tscn
+res://levels/Level1.tscn
+res://levels/Level2.tscn
+res://Scenes/door.tscn
+res://Scenes/player_cat.tscn
+res://Scenes/door.gd

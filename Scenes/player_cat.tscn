@@ -9,7 +9,7 @@ radius = 16.0312
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j3pkm"]
 size = Vector2(32.3711, 33.3486)
 
-[node name="PlayerCat" type="CharacterBody2D"]
+[node name="PlayerCat" type="CharacterBody2D" groups=["Player", "PlayerCat"]]
 collision_layer = 4
 script = ExtResource("1_j3pkm")
 
